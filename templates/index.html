@@ -1,0 +1,170 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- banner -->
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}</style>
+<section class="banner_w3lspvt" id="home">
+	<div class="csslider infinity" id="slider1">
+	
+				<div class="banner-top">
+					<div class="overlay">
+						<div class="container">
+							<div class="w3layouts-banner-info text-center">
+								<div class="center">
+
+				<img class="center" src="{{ url_for('static', filename='images/logo.png') }}" class="img-fluid" alt="" />
+								</div>
+								<h3 class="text-wh">HEALTHY HARVEST</h3>
+								<h4 class="text-wh mx-auto my-4"><b>Farmers are essential. Support and protect them.</b></h4>
+								<a href="https://farmers-shopping.vercel.app/" class="btn btn-primary px-5 py-3">Shop Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	</div>
+</section>
+<!-- //banner -->
+
+<!-- core values -->
+<section class="core-value py-5">
+	<div class="container py-md-4">
+		<h3 class="heading mb-sm-5 mb-4 text-center"> About Us</h3>
+		<div class="row core-grids">
+			<div class="col-lg-6 core-left">
+				<img src="{{ url_for('static', filename='images/core.jpg') }}" class="img-fluid" alt="" />
+			</div>
+			<div class="col-lg-6 core-right">
+				<h3 class="mt-4">Improving Agriculture, Improving Lives, Cultivating Crops To Make Farmers Increase
+					Profit.</h3>
+				<p class="mt-3">Welcome to our agriculture website! We are a platform dedicated to providing information and resources related to agriculture and farming.
+
+Our goal is to support farmers, growers, and anyone interested in agriculture by offering valuable insights into the latest trends, technologies, and practices in the industry. We also strive to promote sustainable agriculture and encourage responsible farming practices that protect the environment while improving productivity and profitability.
+
+Our website features a wealth of content on various topics, including crop management, livestock production, agricultural economics, and more. We also provide news and analysis on current events and issues affecting the agricultural sector.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //core values -->
+
+<!-- Products & Services -->
+<section class="blog py-5">
+	<div class="container py-md-5">
+		<h3 class="heading mb-sm-5 mb-4 text-center"> Our Services</h3>
+		<div class="row blog-grids">
+			<div class="col-lg-4 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">
+				<img src="{{ url_for('static', filename='images/s3.jpg') }}" class="img-fluid" alt="" />
+				<a href="{{ url_for('crop_recommend') }}">
+					<div class="blog-info">
+
+						<h4>Crop</h4>
+
+						<p class="mt-2"> Recommendation about the type of crops to be cultivated which is best suited
+							for the respective conditions</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">
+				<img src="{{ url_for('static', filename='images/s2.jpg') }}" class="img-fluid" alt="" />
+				<a href="{{ url_for('fertilizer_recommendation') }}">
+					<div class="blog-info">
+						<h4>Fertilizer</h4>
+						<p class="mt-2">Recommendation about the type of fertilizer best suited for the particular soil
+							and the recommended crop</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
+
+				<img src="{{ url_for('static', filename='images/s4.jpg') }}" class="img-fluid" alt="">
+
+				<!-- <img src="images/s4.jpg" class="img-fliud" alt="" /> -->
+				<a href="{{ url_for('disease_prediction') }}">
+					<div class="blog-info">
+						<h4>Crop Disease</h4>
+						<p class="mt-2">Predicting the name and causes of crop disease and suggestions to cure it</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<br><br><br>
+		<br>
+		<div class="row blog-grids">
+			<div class="col-lg-4 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">
+				<img src="{{ url_for('static', filename='images/soil.jpg') }}" class="img-fluid" alt="" />
+				<a href="{{ url_for('crop_recommend') }}">
+					<div class="blog-info">
+
+						<h4>Soil Crop Detector</h4>
+
+						<p class="mt-2"> A soil crop detector is a device used in agriculture to measure various properties of the soil, such as moisture content, nutrient levels, pH, and temperature. This information is critical for farmers and growers to optimize crop growth and yield.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">
+				<img src="{{ url_for('static', filename='images/tools.jpg') }}" class="img-fluid" alt="" />
+				<a href="https://farmers-shopping.vercel.app/">
+					<div class="blog-info">
+						<h4>Farmer's Shopping Corner</h4>
+						<p class="mt-2">We value transparency and want to make it easy for our users to reach out to us with any questions, concerns, or feedback. We believe that by working together and sharing knowledge.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
+
+				<img src="{{ url_for('static', filename='images/graph.jpg') }}" class="img-fluid" alt="">
+
+				<!-- <img src="images/s4.jpg" class="img-fliud" alt="" /> -->
+				<a href="{{ url_for('dashboard') }}">
+					<div class="blog-info">
+						<h4>Crop Growth Analysis</h4>
+						<p class="mt-2">Crop growth analysis is a process used in agriculture to measure and evaluate the growth and development of crops over time. It involves monitoring various aspects of crop growth, such as plant height, leaf area, stem diameter</p>
+					</div>
+				</a>
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- //Products & Services -->
+
+
+<!-- Creating custom grid and hover effect
+<section>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/s2.jpg" alt="">
+        <div class="overlay">
+           <h2>Hover effect 1</h2>
+           <a class="info" href="#">link here</a>
+        </div>
+    </div>
+</div> -->
+<br>
+<br>
+<br>
+</html>
+
+{% endblock %}
